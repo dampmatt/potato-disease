@@ -6,7 +6,8 @@ from io import BytesIO
 from PIL import Image
 
 app = FastAPI()
-MODEL=tf.keras.models.load_model(r"C:\Users\KIIT\OneDrive\Desktop\my documents\programming\potator disease\training\saved_models\model1")
+MODEL=tf.keras.models.load_model(r"C:\Users\KIIT\OneDrive\Desktop\my-documents\programming\potato-disease\saved_models\1")
+
 CLASS_NAMES= ["Early Blight", "Late Blight", "Healthy"]
 
 @app.get("/ping")
